@@ -1,4 +1,4 @@
-# Medical Data Analyzer (Minimal Variant)
+# Medical Data Analyzer
 
 ## Opis
 Prosty projekt w Pythonie analizujący dane medyczne pacjentów (wiek, ciśnienie, objawy).
@@ -8,6 +8,7 @@ Aplikacja umożliwia:
 - obliczenia statystyczne (średnia, mediana, grupowanie) z użyciem Pandas,
 - wizualizację wyników (histogram, wykres rozrzutu) z Matplotlib,
 - eksport wyników do pliku CSV.
+- eksport wyników do pliku PDF w formie raportu
 
 ## Pliki
 - `main.py` — GUI (tkinter) i punkt wejścia aplikacji.
@@ -16,6 +17,7 @@ Aplikacja umożliwia:
 - `db.py` — przykładowe połączenie z SQLite (przykładowa baza `sample.db`).
 - `sample_data.csv` — przykładowe dane.
 - `sample.db` — przykładowa SQLite DB z tabelą `patients`.
+- 'report.py' - funkcje raportu
 - `requirements.txt` — potrzebne pakiety.
 - `.gitignore` — dla repozytorium GitHub.
 
