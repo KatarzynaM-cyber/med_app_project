@@ -3,12 +3,12 @@
 ## Opis
 Prosty projekt w Pythonie analizujący dane medyczne pacjentów (wiek, ciśnienie, objawy).
 Aplikacja umożliwia:
-- wczytanie danych z pliku CSV lub z bazy SQLite,
-- filtrowanie danych według wybranych kryteriów,
-- obliczenia statystyczne (średnia, mediana, grupowanie) z użyciem Pandas,
-- wizualizację wyników (histogram, wykres rozrzutu) z Matplotlib,
-- eksport wyników do pliku CSV.
-- eksport wyników do pliku PDF w formie raportu
+- wczytanie danych z pliku CSV (PatientID, Age, Gender, BloodPressure, HeartRate, Symptoms),
+- filtrowanie danych wg wybranych kryteriów,
+- obliczenia statystyczne (średnia, mediana, grupowanie — Pandas),
+- wizualizacje danych (histogramy, wykresy rozrzutu — Matplotlib),
+- eksport wyników i wykresów do pliku **PDF** z raportem,
+- graficzny interfejs użytkownika (Tkinter) do obsługi programu.
 
 ## Pliki
 - `main.py` — GUI (tkinter) i punkt wejścia aplikacji.
@@ -17,9 +17,16 @@ Aplikacja umożliwia:
 - `db.py` — przykładowe połączenie z SQLite (przykładowa baza `sample.db`).
 - `sample_data.csv` — przykładowe dane.
 - `sample.db` — przykładowa SQLite DB z tabelą `patients`.
-- 'report.py' - funkcje raportu
+- `report.py` - funkcja tworzenia raportów w PDF.
 - `requirements.txt` — potrzebne pakiety.
 - `.gitignore` — dla repozytorium GitHub.
+
+## Wykorzystane biblioteki
+
+- `pandas`
+- `matplotlib`
+- `reportlab`
+- `tkinter`
 
 ## Uruchomienie
 1. Utwórz wirtualne środowisko (opcjonalnie):
